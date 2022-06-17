@@ -1,3 +1,7 @@
+package flightCrew;
+
+import flightCrew.Rank;
+
 public class CabinCrewMember {
     
     private String name;

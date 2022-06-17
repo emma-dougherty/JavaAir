@@ -1,3 +1,5 @@
+import flightCrew.CabinCrewMember;
+import flightCrew.Rank;
 import org.junit.Before;
 import org.junit.Test;
 

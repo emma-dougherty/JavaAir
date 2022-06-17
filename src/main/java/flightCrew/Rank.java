@@ -1,3 +1,5 @@
+package flightCrew;
+
 public enum Rank {
     
     CAPTAIN,

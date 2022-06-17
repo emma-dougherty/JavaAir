@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+import flightCrew.CabinCrewMember;
+import flightCrew.Pilot;
+import planes.Plane;
+
 
 public class Flight {
     
@@ -16,7 +20,7 @@ public class Flight {
     public Flight(Pilot pilot, Plane plane, String flightNumber, Airport destination, Airport departure, String departureTime) {
         this.pilot = pilot;
         this.crew = new ArrayList<CabinCrewMember>();
-        this.passengers = new ArrayList<Passenger>();
+        this.passengers = new ArrayList<>();
         this.plane = plane;
         this.flightNumber = flightNumber;
         this.destination = destination;

@@ -1,5 +1,10 @@
+import flightCrew.CabinCrewMember;
+import flightCrew.Pilot;
+import flightCrew.Rank;
 import org.junit.Before;
 import org.junit.Test;
+import planes.Plane;
+import planes.PlaneType;
 
 import static org.junit.Assert.assertEquals;
 
@@ -28,6 +33,10 @@ public class FlightTest {
         flight = new Flight(pilot, plane, "BA234", Airport.AMS, Airport.EDI, "10.00");
     }
     
+//    @Test
+//    public int CanGetAvailableSeats(){
+//        assertEquals(2, );
+//    }
     
     
 }

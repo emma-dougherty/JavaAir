@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+import planes.Plane;
+import planes.PlaneType;
 
 import static org.junit.Assert.assertEquals;
 

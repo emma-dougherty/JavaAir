@@ -1,3 +1,5 @@
+package planes;
+
 public enum PlaneType {
     
     BOEING747 (400,155000.00),
