@@ -2,25 +2,25 @@ package planes;
 
 public class Plane {
     
-    private PlaneType type;
+    private PlaneType planeType;
     
     public Plane(PlaneType planeType) {
-        this.type = planeType;
+        this.planeType = planeType;
     }
     
     public PlaneType getPlaneType() {
-        return type;
+        return this.planeType;
     }
     
     public void setPlaneType(PlaneType planeType) {
-        this.type = planeType;
+        this.planeType = planeType;
     }
     
     public int getCapacity() {
-        return  this.type.getCapacity();
+        return this.planeType.getCapacity();
     }
     
     public double getTotalWeight() {
-        return  this.type.getTotalWeight();
+        return this.planeType.getTotalWeight();
     }
 }

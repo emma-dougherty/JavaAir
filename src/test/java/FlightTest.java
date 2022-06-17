@@ -24,19 +24,31 @@ public class FlightTest {
         passenger1 = new Passenger("Jane", 1);
         passenger2 = new Passenger("Jim", 2);
         passenger3 = new Passenger("John", 2);
-        flight.addCrewMember(cabinCrewMember1);
-        flight.addCrewMember(cabinCrewMember2);
         cabinCrewMember1 = new CabinCrewMember("Jenny Wren", Rank.FLIGHTATTENDANT);
         cabinCrewMember2 = new CabinCrewMember("Peter Peebles", Rank.FLIGHTATTENDANT);
+        flight.addCrewMember(cabinCrewMember1);
+        flight.addCrewMember(cabinCrewMember2);
         pilot = new Pilot("Kresten Smith", Rank.FIRSTOFFICER, "5674");
-        plane = new Plane(PlaneType.BOEING737);
+        plane = new Plane(PlaneType.BOEING777);
         flight = new Flight(pilot, plane, "BA234", Airport.AMS, Airport.EDI, "10.00");
     }
     
-//    @Test
-//    public int CanGetAvailableSeats(){
-//        assertEquals(2, );
-//    }
+    @Test
+    public void canGetAvailableSeats() {
+        assertEquals(300, flight.getAvailableSeats());
+    }
     
+    @Test
+    public void canGetPlaneModel() {
+        assertEquals(PlaneType.BOEING777, flight.getPlaneType());
+    }
+    
+    @Test
+    public void canAddPassenger(){
+        flight.addPassenger(passenger1);
+        flight.addPassenger(passenger2);
+        flight.addPassenger(passenger3);
+        assertEquals(3, flight.getPassengers());
+    }
     
 }

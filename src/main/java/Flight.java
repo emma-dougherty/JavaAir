@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import flightCrew.CabinCrewMember;
 import flightCrew.Pilot;
 import planes.Plane;
+import planes.PlaneType;
 
 
 public class Flight {
@@ -19,7 +20,7 @@ public class Flight {
     
     public Flight(Pilot pilot, Plane plane, String flightNumber, Airport destination, Airport departure, String departureTime) {
         this.pilot = pilot;
-        this.crew = new ArrayList<CabinCrewMember>();
+        this.crew = new ArrayList<>();
         this.passengers = new ArrayList<>();
         this.plane = plane;
         this.flightNumber = flightNumber;
@@ -32,5 +33,19 @@ public class Flight {
         this.crew.add(cabinCrewMember);
     }
     
+    public int getAvailableSeats() {
+        return this.plane.getCapacity();
+    }
     
+    public PlaneType getPlaneType(){
+        return this.plane.getPlaneType();
+    }
+    
+    public void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
+    }
+    
+    public int getPassengers(){
+        return this.passengers.size();
+    }
 }
