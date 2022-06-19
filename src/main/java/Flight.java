@@ -14,7 +14,6 @@ public class Flight {
     private Airport destination;
     private Airport departure;
     private String departureTime;
-//    private Passenger passenger;
     private ArrayList<Passenger> passengers;
     
     public Flight(Pilot pilot, ArrayList<CabinCrewMember> crew, Plane plane, String flightNumber, Airport destination, Airport departure, String departureTime) {

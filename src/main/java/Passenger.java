@@ -2,6 +2,7 @@ public class Passenger {
     
     private String name;
     private int numOfBags;
+    private Flight flight;
     
     public Passenger(String name, int numOfBags) {
         this.name = name;
@@ -23,4 +24,5 @@ public class Passenger {
     public void setNumOfBags(int numOfBags) {
         this.numOfBags = numOfBags;
     }
+
 }

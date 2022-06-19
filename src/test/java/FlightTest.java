@@ -7,6 +7,7 @@ import planes.Plane;
 import planes.PlaneType;
 
 import java.util.ArrayList;
+import java.time.LocalTime;
 
 import static org.junit.Assert.assertEquals;
 
@@ -30,7 +31,7 @@ public class FlightTest {
         cabinCrewMember1 = new CabinCrewMember("Jenny Wren", Rank.FLIGHTATTENDANT);
         cabinCrewMember2 = new CabinCrewMember("Peter Peebles", Rank.FLIGHTATTENDANT);
         ArrayList<CabinCrewMember> crew = new ArrayList<>();
-        flight = new Flight(pilot, crew, plane, "BA234", Airport.AMS, Airport.EDI, "10.00");
+        flight = new Flight(pilot, crew, plane, "BA234", Airport.AMS, Airport.EDI,"10:00");
         passenger1 = new Passenger("Jane", 1);
         passenger2 = new Passenger("Jim", 2);
         passenger3 = new Passenger("Jodie", 2);
